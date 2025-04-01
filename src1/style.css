@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef2f3;
+}
+header {
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.highlight {
+    color: #ffcc00;
+    font-weight: bold;
+}
+main {
+    padding: 20px;
+    text-align: center;
+}
+.slideshow-container {
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto;
+}
+.slide {
+    display: none;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.description {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+}
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+th, td {
+    padding: 15px;
+    border: 2px solid #333;
+    text-align: center;
+    font-size: 18px;
+}
+th {
+    background-color: #2a5298;
+    color: white;
+}
+footer {
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+a {
+    color: #ff6347;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+a:hover {
+    text-decoration: underline;
+    color: #ff4500;
+}
+section {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    line-height: 1.6;
+}

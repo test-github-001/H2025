@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const buttons = document.querySelectorAll(".buy-now");
     buttons.forEach(button => {
         button.addEventListener("click", () => {
-            window.location.href = "lodin.html"; 
+            window.location.href = "./lodin.html"; 
         });
     });
 });

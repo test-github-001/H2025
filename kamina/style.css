@@ -1,0 +1,206 @@
+/*"Miniver", cursive;"Poppins", sans-serif; "Oswald", sans-serif;"Quicksand", sans-serif;"Bytesized", sans-serif;"Kanit", sans-serif*/
+@import url('https://fonts.googleapis.com/css2?family=Bytesized&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Miniver&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,500;0,600;0,700;1,400&family=Quicksand:wght@300..700&display=swap');
+*{
+    font-family: "Kanit", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+/*styling for whole site*/
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.section-content{
+    margin: 0 auto;
+    padding: 0 40px; 
+    max-width: 1200px;
+}
+/* Header styling */
+header {
+    position: relative;
+    width: 100%;
+    height: 95vh; 
+    overflow: hidden;
+}
+header .navbar{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    padding: 20px;
+    width: 100%;
+}
+.logo-text{
+    margin-top: 12px;
+    margin-left: 20px;
+    color: #fff;
+    font-size: 36px;
+    font-weight: 400;
+}
+#menu-open-button {
+    margin-left: 20px;
+    color: #fff;
+    font-size: 1.9rem; 
+    margin-top: 30px;
+}
+#menu-close-button{
+    display: flex;
+    justify-content: end;
+    color: black;
+    font-size: 1.8rem;     
+}
+.nav-menu {
+    display: none; 
+    flex-direction: column;
+    position: fixed;
+    background-color:white; 
+    color: black;
+    top: 30px; 
+    right: -250px;
+    width: 250px;
+    padding: 20px;
+    z-index: 100;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+}
+.nav-menu.active {
+    display: flex; 
+    right: 60px;
+}
+.nav-item {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+}
+
+.nav-item :not(.cart-amount):hover {
+    padding: 5px 10px;
+    border: 1px solid #3184fd;
+    background-color: #3184fd;
+    display: inline;
+    border-radius: 10px;
+}
+.company, .get-involved, .social{
+    display: none;
+}
+.bg-video{
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 80vh;
+    position:absolute;
+}
+/*best selling styling*/
+.section-title{
+    margin: 20px 0;
+    border: 1px solid #3184fd;
+    background-color: #3184fd;
+    color: #fff;
+    font-weight: 500;
+    padding: 5px 20px;
+    display: inline-block;
+    border-radius: 5px;
+    font-family: "Quicksand", sans-serif;
+}
+.cards-block{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 35px 0;
+}
+.cards-block .card{
+   overflow: hidden;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.card .card-img-top{
+    height:220px;
+    cursor: zoom-in ;
+    transition: 0.3s ease;
+}
+.card .card-img-top:hover{
+    transform: scale(1.1);
+}
+.price{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Oswald", sans-serif;
+}
+.add-to-cart-btn{
+    margin-right: 30px;
+}
+.add-to-cart-btn>i:hover{
+    color: #3184fd;
+}
+/*info section styling*/
+.info :not(hr){
+    margin: 8px auto ;
+    padding: 0 20px; 
+    max-width: 1200px;
+}
+.info hr{
+    width: 100%;
+    border: 1px solid blue;
+    margin: 55px 0;
+}
+.company-group , .involve-group{
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+}
+.info-title , .info-item{
+    color: black;
+transition: 0.3s ease;
+}
+.info-item:hover {
+    display: inline;
+    background-color: #3184fd;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.social-link-list{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+}
+.social-link{
+    color: black;
+    font-size: 20px;
+}
+.social-link:hover{
+    color: #3184fd;
+}
+/*footer styling*/
+footer{
+    background-color: #3184fd;
+    color: #fff;
+    text-align: center;
+    height: 50vh;
+}
+footer h1{
+    font-size: 60px;
+    padding-top:15vh;
+}
+footer p{
+    padding-top: 30px;
+    font-size: 12px;
+}
+@media screen and (max-width: 900px){
+    .company, .get-involved, .social{
+        display: block;
+    } 
+    .info{
+        display: none;
+    }
+}

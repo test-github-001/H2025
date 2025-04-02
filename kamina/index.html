@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacaton</title>
+    <!--linling bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Linking fony awesome for icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!--Linking style.css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Header/navbar-->
+    <header>
+        <nav class="navbar section-content">
+            <a href="index.html" class="nav-logo">
+                <h2 class="logo-text">AI Shop</h2>
+            </a>
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="lodin.html" class="nav-link">Cart <span class='cart-amount'>0</span></a>
+                </li>
+                <li class="nav-item">
+                    <a target="_blank" href="giftcart.html" class="nav-link">Gift Cards</a>
+                </li>
+                <li class="nav-item">
+                    <a target="_blank" href="lodin.html" class="nav-link">Log In</a>
+                </li>
+                <li class="nav-item company">
+                    <a href="" class="nav-link">Company</a>
+                </li>
+                <li class="nav-item get-involved">
+                    <a href="" class="nav-link">Get Involved</a>
+                </li>
+                <li class="nav-item social">
+                    <a href="" class="nav-link">social media</a>
+                </li>
+            </ul>
+            <button id="menu-open-button" class="fas fa-bars"></button>
+        </nav>
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="ai.video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </header>
+    
+    <!--Main/best sellers/info-->
+    <main>
+        <!--best sellers-->
+        <section class="best-sellers section-content">
+
+            <h1 class="section-title">Best Sellers</h1>
+
+        <div class="cards-list">
+
+            <div class="cards-block">
+
+                <div class="card"  style="width: 16rem;">
+                    <img src="helmet.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">VisionGuard X</h5>
+                      <p class="card-text">Advanced helmet with a 360° AR display, HD recording, noise-canceling communication.</p>
+                      <div class="price">
+                        <a href="helmet.html" target="_blank" class="btn btn-primary">See More</a>
+                        <div class='add-to-cart-btn'>240$<i class='fa-solid fa-cart-shopping'></i></div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 16rem;">
+                    <img src="capsula.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">NeuroCapsule X-7</h5>
+                      <p class="card-text">A high-tech capsule chair with a sleek, futuristic design, featuring advanced ergonomic padding.</p>
+                      <div class="price">
+                        <a href="capsula.html" target="_blank" class="btn btn-primary">See More</a>
+                        <div class='add-to-cart-btn'>1250$<i class='fa-solid fa-cart-shopping'></i></div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 16rem;">
+                    <img src="bird.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">AeroScout Sentinel </h5>
+                      <p class="card-text">An AI-driven surveillance drone with quantum optics, real-time threat detection, and silent flight technology.</p>
+                      <div class="price">
+                        <a href="bird.html" target="_blank" class="btn btn-primary">See More</a>
+                        <div class='add-to-cart-btn'>250$<i class='fa-solid fa-cart-shopping'></i></div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 16rem;">
+                    <img src="bed.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">NeuroSync MedPod X1</h5>
+                      <p class="card-text">An AI-powered medical pod for diagnostics, regeneration, and sleep optimization with a neural interface</p>
+                      <div class="price">
+                        <a href="bed.html" target="_blank" class="btn btn-primary">See More</a>
+                        <div class='add-to-cart-btn'>3600$<i class='fa-solid fa-cart-shopping'></i></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards-block">
+
+                <div class="card" style="width: 16rem;">
+                    <img src="car.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"> NeoCruiser X1</h5>
+                      <p class="card-text">Futuristic electric car with AI-powered autonomous driving, magnetic levitation technology </p>
+                      <div class="price">
+                        <a href="car.html" target="_blank" class="btn btn-primary">See More</a>
+                        <div class='add-to-cart-btn'>20000$<i class='fa-solid fa-cart-shopping'></i></div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 16rem;">
+                    <img src="toilet.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">IntelliLoo Pro</h5>
+                      <p class="card-text">Smart toilet with self-cleaning, health monitoring, heated seat and fully integrated with smart home systems.</p>
+                      <div class="price">
+                        <a href="toilet.html" target="_blank" class="btn btn-primary">See More</a>
+                        <div class='add-to-cart-btn'>200$<i class='fa-solid fa-cart-shopping'></i></div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 16rem;">
+                    <img src="laptop.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Quantum-X MultiScreen Laptop</h5>
+                      <p class="card-text">ultimate workstation of the future, featuring a multi-display setup </p>
+                      <div class="price">
+                        <a href="laptop.html" target="_blank" class="btn btn-primary">See More</a>
+                        <div class='add-to-cart-btn'>700$<i class='fa-solid fa-cart-shopping'></i></div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 16rem;">
+                    <img src="pad.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">HoloTab X1</h5>
+                      <p class="card-text">The HoloTab X1 is a next-gen transparent tablet that takes digital interaction to a new level.</p>
+                      <div class="price">
+                        <a href="pad.html" target="_blank" class="btn btn-primary">See More</a>
+                        <div class='add-to-cart-btn'>460$<i class='fa-solid fa-cart-shopping'></i></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards-block">
+
+                <div class="card" style="width: 16rem;">
+                    <img src="sneakers.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">CyberStride Exo-Sneakers</h5>
+                      <p class="card-text">redefine footwear with cutting-edge technology, blending AI-driven motion assistance</p>
+                      <div class="price">
+                        <a href="sneakers.html" target="_blank" class="btn btn-primary">See More</a>
+                        <div class='add-to-cart-btn'>120$<i class='fa-solid fa-cart-shopping'></i></div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 16rem;">
+                    <img src="table.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">HoloDesk 3000</h5>
+                      <p class="card-text">A smart holographic desk with gesture control, AI assistance, and a futuristic interface for an immersive experience.</p>
+                      <div class="price">
+                        <a href="table.html" target="_blank" class="btn btn-primary">See More</a>
+                        <div class='add-to-cart-btn'>2400$<i class='fa-solid fa-cart-shopping'></i></div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 16rem;">
+                    <img src="watch.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">HoloSmartwatch CVV</h5>
+                      <p class="card-text">A futuristic smartwatch featuring a sleek, metallic design with glowing blue and gold accents.</p>
+                      <div class="price">
+                        <a href="watch.html" target="_blank" class="btn btn-primary">See More</a>
+                        <div class='add-to-cart-btn'>145$<i class='fa-solid fa-cart-shopping'></i></div>
+                      </div>
+                    </div>
+                </div>
+                
+                <div class="card" style="width: 16rem;">
+                    <img src="ball.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">X-7 CyberCore Sphere</h5>
+                      <p class="card-text">An advanced artificial intelligence system that controls its functions and interactions.</p>
+                      <div class="price">
+                        <a href="ball.html" target="_blank" class="btn btn-primary">See More</a>
+                        <div class='add-to-cart-btn'>300$<i class='fa-solid fa-cart-shopping'></i></div>
+                      </div>
+                    </div>
+                </div>
+                
+            </div>             
+        </section>
+
+        <!--info-->
+        <section class="info">
+            <hr>
+                <div class="company-group">
+                    <h5 class="info-title">Company</h5>
+                    <div class="company-item">
+                        <a href="" class="info-item">Order</a>
+                        <a href="" class="info-item">Our story</a>
+                        <a href="" class="info-item">Rewards</a>
+                        <a href="" class="info-item">Partners</a>
+                        <a href="" class="info-item">Support</a>
+                        <a href="" class="info-item">Gift Card Balance</a>
+                    </div>
+                </div>
+
+                <div class="involve-group">
+                    <h5 class="info-title">Get Involved</h5>
+                    <div class="involve">
+                        <a href="" class="info-item">Press</a>
+                        <a href="" class="info-item">Collaborate</a>
+                        <a href="" class="info-item">Franchising</a>
+                        <a href="" class="info-item">Franchise Store Jobs</a>
+                        <a href="" class="info-item">HQ Careers</a>
+                        <a href="" class="info-item">AI Cares</a>
+                    </div>
+                </div>
+                <div class="social-link-list">
+                    <a href="https://www.facebook.com/?locale=ru_RU" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/home" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="http://tiktok.com/ru-RU" class="social-link"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://ru.pinterest.com/" class="social-link"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="https://ru.linkedin.com/" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <h1>AI Shop</h1>
+        <p>© 2025 all rights reserved. <br> Privacy policy|Terms and Conditions Non-edible Cookie Preferences</p>
+    </footer>
+
+    <!--linking bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--linking script.js-->
+    <script src="script.js"></script>
+</body>
+</html>

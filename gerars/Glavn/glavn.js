@@ -37,6 +37,7 @@ document.getElementById('chat-form').addEventListener('submit', async function(e
     input.value = ''; // Очищаем поле ввода
     output.scrollTop = output.scrollHeight;
 
+    /*
     try {
         const response = await fetch('https://api.deepseek.com/chat/completions', {
             method: 'POST',
@@ -71,6 +72,41 @@ document.getElementById('chat-form').addEventListener('submit', async function(e
     } catch (error) {
         console.error('Ошибка:', error); // Выводим ошибку в консоль для отладки
         output.innerHTML += `<p><strong>Бот:</strong> Ошибка: ${error.message}. Попробуйте еще раз!</p>`;
+    }
+    */
+
+    try {
+        const response = await fetch('https://api.deepseek.com/chat/completions', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer sk-71aee75c7748438f92658448a5546155'
+            },
+            body: JSON.stringify({
+                model: 'deepseek-chat',
+                messages: [
+                    { role: 'system', content: 'Ты полезный ассистент.' },
+                    { role: 'user', content: question }
+                ],
+                max_tokens: 150
+            })
+        });
+
+        if (response.status === 402) {
+            throw new Error("Этот API требует оплаты. Используйте другой сервис.");
+        }
+
+        if (!response.ok) {
+            throw new Error(`Ошибка: ${response.status}`);
+        }
+
+        const data = await response.json();
+        const answer = data.choices?.[0]?.message?.content || "Не удалось получить ответ";
+        output.innerHTML += `<p><strong>Бот:</strong> ${answer}</p>`;
+        
+    } catch (error) {
+        output.innerHTML += `<p><strong>Ошибка:</strong> ${error.message}</p>`;
+        console.error("Детали ошибки:", error);
     }
 
     output.scrollTop = output.scrollHeight;

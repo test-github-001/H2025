@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', monospace;
+    background: linear-gradient(180deg, #000, #1a1a1a);
+    color: #0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    padding: 25px;
+    text-align: center;
+    background: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.logo {
+    height: auto;
+    width: 60px;
+}
+
+main {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: 1;
+}
+
+.blue {
+    position: absolute;
+    top: 50%;
+    left: 550px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    padding: 25px;
+}
+
+.blue-left {
+    position: absolute;
+    left: -50px;
+    bottom: 38px;
+    height: 164px;
+}
+
+.blue-right {
+    height: 160px;
+}
+
+.red {
+    position: absolute;
+    top: 50%;
+    left: 1000px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    padding: 25px;
+}
+
+.red-left {
+    position: absolute;
+    left: -65px;
+    bottom: 34px;
+    height: 152px;
+}
+
+.red-right {
+    height: 160px;
+}
+
+.ochki {
+    position: absolute;
+    top: 20%;
+    left: 735px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    padding: 25px;
+    height: 120px;
+}
+
+footer {
+    padding: 15px;
+    text-align: center;
+    background: #000;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.vibor {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2; /* Увеличиваем z-index, чтобы быть выше других элементов */
+    background: rgba(0, 0, 0, 0.95);
+    color: rgb(101, 255, 209);
+    padding: 25px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none; /* Отключаем клики, когда блок не виден */
+}
+
+.vibor2 {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2; /* Увеличиваем z-index, чтобы быть выше других элементов */
+    background: rgba(0, 0, 0, 0.95);
+    color: rgb(255, 129, 101);
+    padding: 25px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none; /* Отключаем клики, когда блок не виден */
+}
+
+.vibor a {
+    background-color: rgb(71, 71, 71);
+    color: rgb(101, 255, 209);
+    text-decoration: none;
+    padding: 5px 15px;
+    margin-left: 10px;
+}
+
+.vibor2 a {
+    background-color: rgb(71, 71, 71);
+    color: rgb(255, 129, 101);
+    text-decoration: none;
+    padding: 5px 15px;
+    margin-left: 10px;
+}
+
+.vibor button {
+    color: rgb(101, 255, 209);
+    background-color: rgb(71, 71, 71);
+    padding: 5px 15px;
+}
+
+.vibor2 button {
+    color: rgb(255, 129, 101);
+    background-color: rgb(71, 71, 71);
+    padding: 5px 15px;
+}
+
+.blue-left2 {
+    position: absolute;
+    left: -120px;
+    bottom: 38px;
+    height: 164px;
+    transition: all 0.3s ease;
+}
+
+.blue-right2 {
+    height: 160px;
+    transform: translateX(40px);
+    transition: all 0.3s ease;
+}
+
+.red-left2 {
+    position: absolute;
+    left: -140px;
+    bottom: 34px;
+    height: 152px;
+    transition: all 0.3s ease;
+}
+
+.red-right2 {
+    height: 160px;
+    transform: translateX(40px);
+    transition: all 0.3s ease;
+}

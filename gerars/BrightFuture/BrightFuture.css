@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;800&display=swap');
+body{
+    background-color: #e6f0fa;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Exo 2', sans-serif;
+}
+.logo{
+    height: auto;
+    width: 90px;
+}
+main{
+    background-color: #e6f0fa;
+    margin: 0;
+}
+header{
+    margin: 0;
+    color: rgb(2, 225, 2);
+    background-color: #c1e0ff;
+    display: flex;
+    justify-content: center;
+}
+footer{
+    color: rgb(2, 225, 2);
+    background-color: #c1e0ff;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    font-size: 30px;
+}
+footer p{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.kartinki {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 0px;
+    padding-bottom: 10px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.kartinki img {
+    height: 299px;
+    object-fit: cover;
+}
+#korabl {
+    height: 60px;
+    position: absolute;
+    bottom: 50px;
+    right: 0; 
+    z-index: 600;
+    animation: fly-reverse 5s linear infinite;
+}
+#korabl2 {
+    height: 70px;
+    position: absolute;
+    bottom: 140px;
+    left: 0; 
+    z-index: 600;
+    animation: fly 15s ease-in infinite;
+}
+#korabl3 {
+    height: 70px;
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    z-index: 600;
+    animation: fly 8s ease infinite;
+}
+.cilivisaition{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 16px;
+    width: 1300px;
+    background-color: #c1e0ff;
+    text-align: center;
+}
+.cilivisaition img{
+    height: 320px;
+}
+.chel{
+    width: 380px;
+    background-color: #86c2ff;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in, box-shadow 0.3s;
+}
+.ludi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.story p{
+    font-size: 20px;
+}
+.story{
+    text-align: center;
+    width: 1200px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.test{
+    color: aliceblue;
+    text-decoration: none;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    height: 40px;
+    border: 2px rgb(197, 197, 197) solid;
+    background-color: rgb(0, 0, 182);
+    width: 240px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.domik{
+    background-color: #68a4e0;
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 100px;
+    left: 1400px;
+}
+.dom img{
+    height: 70px;
+    z-index: 40px;
+    margin: auto;
+    padding: auto;
+}
+@keyframes fly {
+    0% {
+        left: 0; 
+        transform: scaleX(1);
+    }
+    50% {
+        left: calc(100% - 70px); 
+        transform: scaleX(1);
+    }
+    51% {
+        transform: scaleX(-1);
+    }
+    100% {
+        left: 0; 
+        transform: scaleX(-1);
+    }
+}
+@keyframes fly-reverse {
+    0% {
+        right: 0; 
+        transform: scaleX(-1);
+    }
+    50% {
+        right: calc(100% - 60px);
+        transform: scaleX(-1);
+    }
+    51% {
+        transform: scaleX(1);
+    }
+    100% {
+        right: 0;
+        transform: scaleX(1);
+    }
+}
+.chel:hover{
+    transform: translateY(-16px);
+    box-shadow: 0px 2px 14px 7px #2190ff;
+}

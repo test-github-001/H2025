@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;800&display=swap');
+body{
+    background-color: #171010;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Exo 2', sans-serif;
+}
+header{
+    margin: 0;
+    color: rgb(2, 225, 2);
+    background-color: #6a4d4d;
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    height: auto;
+    width: 90px;
+}
+.kartinki{
+    display: flex;
+    flex-direction: row;
+}
+.small{
+    height: 140px;
+}
+.small2{
+    height: 140px;
+    animation: shot 3s linear infinite;
+    position: relative;
+}
+.small3 {
+    height: 140px;
+    animation: shot2 3s linear infinite;
+    position: relative;
+}
+.kartinki2{
+    position: relative;
+    left: 1030px;
+}
+.terminator{
+    position: relative;
+    left: 480px;
+}
+.story p{
+    font-size: 20px;
+}
+.story{
+    text-align: center;
+    width: 1200px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    color: rgb(255, 233, 221);
+}
+.war{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 16px;
+    width: 1300px;
+    background-color: #6a4d4d;
+    text-align: center;
+}
+.srazenie img{
+    height: 320px;
+}
+.srazenie{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#bitva1{
+    width: 500px;
+    background-color: #b75f5f;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in, box-shadow 0.3s;
+}
+#bitva2{
+    width: 500px;
+    background-color: #b75f5f;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in, box-shadow 0.3s;
+}
+footer{
+    color: rgb(2, 225, 2);
+    background-color: #6a4d4d;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    font-size: 30px;
+}
+footer p{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.test{
+    color: aliceblue;
+    text-decoration: none;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    height: 40px;
+    border: 2px rgb(197, 197, 197) solid;
+    background-color: #b75f5f;
+    width: 240px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.domik{
+    background-color: #cf5454;
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 100px;
+    left: 1400px;
+}
+.dom img{
+    height: 70px;
+    z-index: 40px;
+    margin: auto;
+    padding: auto;
+}
+@keyframes shot2 {
+    20% {
+        right: 0px;
+    }
+    90% {
+        right: 900px;
+    }
+    100% {
+        right: 950px;
+    }
+}
+@keyframes shot{
+    20%{
+        left: 0px;
+    }
+    90%{
+        left: 900px;
+    }
+    100%{
+        left: 950px;
+    }
+}
+#bitva1:hover{
+    transform: translateY(-16px);
+    box-shadow: 0px 2px 14px 7px #5f1010;
+}
+#bitva2:hover{
+    transform: translateY(-16px);
+    box-shadow: 0px 2px 14px 7px #5f1010;
+}

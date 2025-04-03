@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Cyberpunk</title>
+    <link rel="stylesheet" href="Glavn.css">
+    <script defer src="glavn.js"></script>
+</head>
+<body>
+    <header>
+        <div class="name">
+            <img src="../ai.png" class="logo">
+            <h1>Future with AI</h1>
+        </div>
+        <nav>
+            <a href="#test" class="button">Психологический тест</a>
+            <a href="#why" class="button">ИИ в будущем</a>
+            <a href="#bott" class="button">Чат-бот</a>
+        </nav>
+    </header>
+    <main>
+        <section id="test">
+            <h2>Психологический Тест на отношение к нейросетям</h2>
+            <form id="AItest">
+                <div class="vopros">
+                    <p>1. Как вы реагируете на новости о новых достижениях ИИ?</p>
+                    <label><input type="radio" name="q1" value="a">a) Это пугает, технологии слишком быстро развиваются</label><br>
+                    <label><input type="radio" name="q1" value="b">b) Мне все равно, это не влияет на мою жизнь</label><br>
+                    <label><input type="radio" name="q1" value="c">c) Это круто, ИИ — будущее!</label><br>
+                </div>
+                <div class="vopros">
+                    <p>2. Как бы вы описали свое отношение к использованию ИИ в работе?</p>
+                    <label><input type="radio" name="q2" value="a">a) Боюсь, что ИИ заменит меня</label><br>
+                    <label><input type="radio" name="q2" value="b">b) Не думаю об этом, пусть будет как будет</label><br>
+                    <label><input type="radio" name="q2" value="c">c) Отлично, ИИ поможет мне работать лучше</label><br>
+                </div>
+                <div class="vopros">
+                    <p>3. Что вы чувствуете, общаясь с чат-ботом вроде меня?</p>
+                    <label><input type="radio" name="q3" value="a">a) Не по себе, это не человек</label><br>
+                    <label><input type="radio" name="q3" value="b">b) Ничего особенного, просто инструмент</label><br>
+                    <label><input type="radio" name="q3" value="c">c) Радость, это как новый друг</label><br>
+                </div>
+                <div class="vopros">
+                    <p>4. Как вы относитесь к идее, что ИИ может принимать решения за людей?</p>
+                    <label><input type="radio" name="q4" value="a">a) Это опасно, я не доверяю машинам</label><br>
+                    <label><input type="radio" name="q4" value="b">b) Мне без разницы, кто решает </label><br>
+                    <label><input type="radio" name="q4" value="c">c) Здорово, ИИ умнее нас</label><br>
+                </div>
+                <div class="vopros">
+                    <p>5. Что вы думаете о будущем, где ИИ управляет городами?</p>
+                    <label><input type="radio" name="q5" value="a">a) Страшно, это потеря контроля</label><br>
+                    <label><input type="radio" name="q5" value="b">b) Не знаю, поживем — увидим</label><br>
+                    <label><input type="radio" name="q5" value="c">c) Классно, все будет идеально</label><br>
+                </div>
+                <div class="vopros">
+                    <p>6. Как вы относитесь к ИИ в творчестве (музыка, искусство)?</p>
+                    <label><input type="radio" name="q6" value="a">a) Это неправильно, машины не должны творить</label><br>
+                    <label><input type="radio" name="q6" value="b">b) Нормально, но мне неинтересно</label><br>
+                    <label><input type="radio" name="q6" value="c">c) Восхитительно, новые горизонты</label><br>
+                </div>
+                <div class="vopros">
+                    <p>7. Что вы думаете о конфиденциальности данных при использовании ИИ?</p>
+                    <label><input type="radio" name="q7" value="a">a) Беспокоюсь, ИИ следит за мной</label><br>
+                    <label><input type="radio" name="q7" value="b">b) Не задумываюсь об этом</label><br>
+                    <label><input type="radio" name="q7" value="c">c) Не важно, ИИ делает жизнь лучше</label><br>
+                </div>
+                <div class="vopros">
+                    <p>8. Как вы видите ИИ через 20 лет?</p>
+                    <label><input type="radio" name="q8" value="a">a) Как угрозу человечеству</label><br>
+                    <label><input type="radio" name="q8" value="b">b) Как обычную часть жизни</label><br>
+                    <label><input type="radio" name="q8" value="c">c) Как лучшего помощника</label><br>
+                </div>
+                <div class="vopros">
+                    <p>9. Как вы относитесь к обучению ИИ на ваших данных?</p>
+                    <label><input type="radio" name="q9" value="a">a) Против, это нарушение личных границ</label><br>
+                    <label><input type="radio" name="q9" value="b">b) Не возражаю, если это полезно</label><br>
+                    <label><input type="radio" name="q9" value="c">c) За, хочу помочь ИИ стать лучше</label><br>
+                </div>
+                <div class="vopros">
+                    <p>10. Что для вас ИИ в двух словах?</p>
+                    <label><input type="radio" name="q10" value="a">a) Опасный эксперимент</label><br>
+                    <label><input type="radio" name="q10" value="b">b) Полезный инструмент</label><br>
+                    <label><input type="radio" name="q10" value="c">c) Верный друг</label><br>
+                </div>
+                <button type="submit" class="button">Узнать результат</button>
+            </form>
+            <div id="result"></div>
+        </section>
+        <section id="why">
+            <h2>Как и где ИИ будет использоваться в будущем?</h2>
+            <table>
+                <tr>
+                    <th>Медецина</th>
+                    <th>Образование</th>
+                    <th>Навигация и транспортная система</th>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>В будущем искусственный интеллект (ИИ) в медицине может использоваться следующим образом:</h4>
+                        <ul>
+                            <li>Разработка новых методов диагностики и лечения.</li>
+                            <li>Анализ данных о заболеваемости и выявление факторов риска.</li>
+                            <li>Мониторинг состояния пациентов в реальном времени.</li>
+                            <li>Роботизированная хирургия.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <h4>В будущем искусственный интеллект (ИИ) в образовании будет использоваться следующим образом:</h4>
+                        <ul>
+                            <li>Персонализированное онлайн-обучение.</li>
+                            <li>Виртуальный репетитор.</li>
+                            <li>Автоматизация рутинных задач.</li>
+                            <li>Прогнозирование успеха студентов и раннее выявление проблем.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <h4>В будущем искусственный интеллект (ИИ) в навигации и транспортной системе может использоваться следующим образом:</h4>
+                        <ul>
+                            <li>Автономные транспортные средства.</li>
+                            <li>Оптимизация логистики.</li>
+                            <li>Улучшение качества обслуживания клиентов.</li>
+                            <li>Устойчивый транспорт.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section id="bot">
+            <h2>Чат-бот: будущее с ИИ</h2>
+            <div class="chat-container">
+                <div id="chat-output" class="chat-output">
+                    <p>Задайте мне вопрос о будущем искусственного интеллекта!</p>
+                </div>
+                <form id="chat-form">
+                    <input type="text" id="chat-input" placeholder="Введите ваш вопрос..." required>
+                    <button type="submit" class="button">Отправить</button>
+                </form>
+            </div>
+        </section>
+        <div class="domik"><a href="../Hakaton.html" class="dom"> <img src="../dom.png"> </a></div>
+    </main>
+    <footer>
+        <h2>Created by @arsbars1602</h2>
+    </footer>
+</body>
+</html>

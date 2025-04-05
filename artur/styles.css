@@ -1,0 +1,83 @@
+body {
+    text-align: center;
+background-image: url("https://avatars.mds.yandex.net/i?id=63cde9a9e68d5010549edfce2df712a673bb83d5-7992926-images-thumbs&n=13");
+font-family: fantasy;
+}
+
+img {
+margin: 10 px;
+border: 1px dotted white; /* Сплошная зеленая рамка */
+    padding: 20px; /* Отступ внутри рамки */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Тень */
+    margin: 10px; /* Отступ снаружи рамки */
+
+}
+img {
+    transition: transform 0.3s ease-in-out;
+    height: 60 px;
+    width: 70 px;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+ 
+header {
+background-image: url("https://avatars.mds.yandex.net/i?id=b8a52107ee4f1c463566710a8cbea377017db452-5723051-images-thumbs&n=13");
+}
+
+footer {
+background-image: url("https://avatars.mds.yandex.net/i?id=b8a52107ee4f1c463566710a8cbea377017db452-5723051-images-thumbs&n=13");
+}
+p {
+background-image: url("https://avatars.mds.yandex.net/i?id=b8a52107ee4f1c463566710a8cbea377017db452-5723051-images-thumbs&n=13");
+font-size: 30px
+}
+
+h2 {
+background-image: url("https://avatars.mds.yandex.net/i?id=c9e3d3d1bc82b5969d87a40e71ced0b0070006a8-4033769-images-thumbs&n=13");
+}
+
+a {
+color: darkred;
+font-size: 30 px;
+}
+
+.shadow-box {
+    border: 2px solid white; /* Сплошная зеленая рамка */
+    padding: 20px; /* Отступ внутри рамки */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Тень */
+    margin: 10px; /* Отступ снаружи рамки */
+}
+
+.div1 {
+border: solid 10 px;
+}
+
+
+  .tab {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.content {
+    display: none; /* Скрыть содержимое по умолчанию */
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+   background-image: url("https://avatars.mds.yandex.net/i?id=20ea021167d7426ba8d3ab688251fb7e1b5664c8-9380132-images-thumbs&ref=rim&n=33&w=415&h=300");
+    font-family:fantasy;
+}
+
+  .img4 {
+    border: solid blue 4px;
+    width: 300px;
+  }
+  
+  .img5 {
+    border: double grey 5px;
+  }
